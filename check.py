@@ -17,7 +17,7 @@ def eval_bitrate(artist, album, file):
             track_path = os.path.abspath(file)
             readable_file = open(track_path)
             vbr, bitrate = mp3.Mp3AudioInfo(readable_file, 0, None).bit_rate
-            if artist == 'Logic':
+            if bitrate < 320:
                 print file, bitrate
             readable_file.close()
         except any as e:
