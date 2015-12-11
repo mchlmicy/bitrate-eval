@@ -6,5 +6,3 @@ echo 'Building environment'
 virtualenv env
 source env/bin/activate
 pip install -r req*
-echo 'Running...'
-python main.py
